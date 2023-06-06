@@ -1,6 +1,11 @@
 function showAlert() { 
     alert('¡hola, esta es una alerta desde JavaScript!');
 }
+document.querySelector("button.button-menu-toggle")
+    .addEventListener("click", function () {
+        document.querySelector(".nav-links").
+            classList.toggle("nav-links-responsive")
+    });
 // esto es de la clase 5
 const form = document.getElementById('myForm');
 form.addEventListener('submit', function(event) {
